@@ -1,8 +1,8 @@
-# Some beautiful title
+# Reattività in Angular: perché Signal cambia le regole del gioco
 
-Slides for what?.
+Slides for talk about Signal and Angular
 
-Originally conceived for the what?.
+Originally conceived for [Modena Full Stack](https://www.meetup.com/it-IT/modena-full-stack).
 
 Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 

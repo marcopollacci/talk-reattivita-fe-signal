@@ -163,6 +163,10 @@ p-fragment.landing {
   @include mixins.smallText;
 }
 
+.medium-text {
+  font-size: 0.8em;
+}
+
 .alter-image-size {
   --image-start-size: 8em;
   --image-width-size: auto;
@@ -215,15 +219,15 @@ pre {
 }
 
 .current-gradient-sub-section {
-  --starting-point-gradient: #fafafa;
-  --ending-point-gradient: #000000;
+  --starting-point-gradient: #ff00d8;
+  --ending-point-gradient: #ff542f;
   @include mixins.gradientText(var(--starting-point-gradient), var(--ending-point-gradient));
 }
 
 .cover {
   h1 {
-    --starting-point-gradient: #fafafa;
-    --ending-point-gradient: #000000;
+    --starting-point-gradient: #1d99fd;
+    --ending-point-gradient: #ff00f7;
     @extend .current-gradient-sub-section;
     font-size: 1.3em;
     text-align: center;
@@ -259,8 +263,8 @@ pre {
   text-align: center;
   @for $i from 1 through 6 {
     h#{$i} {
-      --starting-point-gradient: #fafafa;
-      --ending-point-gradient: #000000;
+      --starting-point-gradient: #1d99fd;
+      --ending-point-gradient: #ff00f7;
       @extend .current-gradient-sub-section;
     }
   }
@@ -493,7 +497,7 @@ a {
 }
 
 .text-cover {
-  @include mixins.gradientText(#000, #a0a0a0);
+  @include mixins.gradientText(#1d99fd, #ff00f7);
 }
 
 .text-sub-section {
@@ -599,6 +603,18 @@ pre[data-label-file]::after {
   }
 }
 
+.shadow-logo {
+  --start-width: 4em;
+  --start-height: 4em;
+  --duration-shadow-logo: 3s;
+  img {
+    width: var(--start-width);
+    height: var(--start-height);
+    animation: shadow-logo var(--duration-shadow-logo) infinite;
+  }
+  margin: 0 auto;
+}
+
 @keyframes box {
   0% {
     inset-inline-start: var(--rando0);
@@ -619,5 +635,15 @@ pre[data-label-file]::after {
   100% {
     inset-inline-start: var(--rando8);
     inset-block-start: var(--rando9);
+  }
+}
+
+@keyframes shadow-logo {
+  0%,
+  100% {
+    filter: drop-shadow(0.25em 0.25em 0.1375em rgba(0, 0, 0, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0.25em 0.225em 0.1375em rgba(109, 108, 108, 0.5));
   }
 }
