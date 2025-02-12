@@ -1,3 +1,5 @@
+@use 'core/mixins' as mixins;
+
 :root {
   --starting-point-gradient: #1d99fd;
   --ending-point-gradient: #ff00f7;
@@ -13,4 +15,11 @@
 .presentation-progress {
   --progress-color: #1d99fd;
   --progress-color-two: #ff00f7;
+}
+
+.bottom-fist-page {
+  span:first-of-type {
+    @include mixins.gradientText(#252525, #484747);
+    font-family: inherit;
+  }
 }
