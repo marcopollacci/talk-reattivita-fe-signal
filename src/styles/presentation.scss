@@ -218,17 +218,19 @@ pre {
   }
 }
 
+.current-gradient {
+  @include mixins.gradientText(var(--starting-point-gradient), var(--ending-point-gradient));
+}
+
 .current-gradient-sub-section {
   --starting-point-gradient: #ff00d8;
   --ending-point-gradient: #ff542f;
-  @include mixins.gradientText(var(--starting-point-gradient), var(--ending-point-gradient));
+  @extend .current-gradient;
 }
 
 .cover {
   h1 {
-    --starting-point-gradient: #1d99fd;
-    --ending-point-gradient: #ff00f7;
-    @extend .current-gradient-sub-section;
+    @extend .current-gradient;
     font-size: 1.3em;
     text-align: center;
     margin-top: 0;
@@ -263,9 +265,7 @@ pre {
   text-align: center;
   @for $i from 1 through 6 {
     h#{$i} {
-      --starting-point-gradient: #1d99fd;
-      --ending-point-gradient: #ff00f7;
-      @extend .current-gradient-sub-section;
+      @extend .current-gradient;
     }
   }
 }
