@@ -23,3 +23,7 @@
     font-family: inherit;
   }
 }
+
+.text-sub-section {
+  @include mixins.gradientText(#ff00d8, #ff542f);
+}
