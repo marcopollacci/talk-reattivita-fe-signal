@@ -293,6 +293,10 @@ pre {
   }
 }
 
+.cover-all {
+  @extend .current-gradient;
+}
+
 .cover-subSection-all {
   @extend .current-gradient-sub-section;
 }

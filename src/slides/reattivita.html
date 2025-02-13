@@ -40,7 +40,7 @@
 </p-slide>
 <p-slide class="center">
   <h3 class="cover-subSection-all" style="margin-block-end: 1em">Metodi di gestione dello stato</h3>
-  <div style="font-weight: bold" class="flex two-columns-flex-start">
+  <div style="font-weight: bold; align-items: flex-start" class="flex two-columns-divided-vertically">
     <p-fragment><p>👀 Observables</p></p-fragment>
     <p-fragment
       ><p>
@@ -51,4 +51,35 @@
 </p-slide>
 <p-slide class="cover-internal-sub-section">
   <h1>Observable</h1>
+</p-slide>
+<p-slide>
+  <h4>🧐 <span class="text-sub-section">Observable</span></h4>
+  <p>🚀 Gli Observable sono oggetti appartenenti alla libreria <span class="cover-all"> RxJS.</span></p>
+  <p-fragment
+    ><p>🚀 Fanno parte del paradigma della programmazione denominata <span class="cover-all">Reactive pattern</span></p></p-fragment
+  >
+  <p-fragment><p>🚀 Rappresentano un flusso di dati asincrono</p></p-fragment>
+</p-slide>
+<p-slide>
+  <h4>🧐 <span class="text-sub-section">Observable</span></h4>
+  <p style="line-height: 1.5em">
+    🕵 Fa parte di questo paradigma anche l'<span class="cover-all">Observer</span> o <span class="cover-all">Subscriber</span> ed è colui che si sottoscrive all'Observable
+    <p-fragment><br />e che reagisce all'emissione di un valore in un dato momento del tempo 🗂</p-fragment>
+  </p>
+</p-slide>
+<p-slide>
+  <h4>🧐 <span class="text-sub-section">Observable</span></h4>
+  <p>Sottoscrivendosi nei componenti o nei servizi, Angular sfrutta questa libreria per aggiornare lo stato applicativo</p>
+  <p-fragment style="text-align: end; margin-block-start: 2em">...senza necessità di reload / refresh!</p-fragment>
+</p-slide>
+<p-slide autoplay timing-fragment="1000">
+  <h4>🧐 <span class="text-sub-section">Observable: esempi di utilizzo</span></h4>
+  <ul>
+    <p-fragment><li>📌 Chiamate HTTP</li></p-fragment>
+    <p-fragment><li>📌 Eventi del browser</li></p-fragment>
+    <p-fragment><li>📌 WebSockets</li></p-fragment>
+  </ul>
+</p-slide>
+<p-slide class="cover-internal-sub-section">
+  <h1>Change Detection</h1>
 </p-slide>
