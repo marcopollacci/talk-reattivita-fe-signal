@@ -293,6 +293,10 @@ pre {
   }
 }
 
+.cover-subSection-all {
+  @extend .current-gradient-sub-section;
+}
+
 .my-presentation {
   display: flex;
   flex-direction: column;

@@ -27,3 +27,23 @@
 .text-sub-section {
   @include mixins.gradientText(#ff00d8, #ff542f);
 }
+
+.displNone-until-visible[aria-hidden='true'] {
+  display: none;
+}
+
+.toggle-img {
+  img[alt='old logo'] {
+    display: none;
+  }
+  &:has(p-fragment[old][aria-hidden='false']) {
+    img {
+      &[alt='old logo'] {
+        display: initial;
+      }
+      &[alt='angular logo'] {
+        display: none;
+      }
+    }
+  }
+}
