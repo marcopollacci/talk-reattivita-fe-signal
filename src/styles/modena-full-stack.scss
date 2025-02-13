@@ -33,12 +33,12 @@
 }
 
 .toggle-img {
-  img[alt='old logo'] {
+  img[alt='old angular logo'] {
     display: none;
   }
   &:has(p-fragment[old][aria-hidden='false']) {
     img {
-      &[alt='old logo'] {
+      &[alt='old angular logo'] {
         display: initial;
       }
       &[alt='angular logo'] {
