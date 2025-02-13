@@ -20,7 +20,7 @@
 .bottom-fist-page {
   span:first-of-type {
     @include mixins.gradientText(#252525, #484747);
-    font-family: inherit;
+    font-family: 'Graphik Regular', sans-serif;
   }
 }
 
