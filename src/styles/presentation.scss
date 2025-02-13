@@ -167,11 +167,14 @@ p-fragment.landing {
   font-size: 0.8em;
 }
 
-.alter-image-size {
+p-slide img.alter-image-size {
   --image-start-size: 8em;
   --image-width-size: auto;
   height: var(--image-start-size);
   width: var(--image-width-size);
+  opacity: 1;
+  filter: none;
+  transform: none;
 }
 
 code,
