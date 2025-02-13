@@ -17,7 +17,7 @@ server.init({
 
 server.watch('src/**/*.html', {}, (event, file) => {
   console.log(`src/**/*.html -> ${event}: ${file}`);
-  buildSlides();
+  buildSlides(false);
   server.reload();
 });
 
