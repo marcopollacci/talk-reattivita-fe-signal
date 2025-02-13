@@ -4,26 +4,18 @@
   "editor.insertSpaces": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
+  "editor.codeActionsOnSave": { "source.organizeImports": "explicit" },
   "workbench.editor.tabSizing": "shrink",
   "git.suggestSmartCommit": false,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.smartCommitChanges": "tracked",
   "gitlens.views.remotes.branches.layout": "tree",
   "eslint.lintTask.enable": true,
-  "conventionalCommits.scopes": ["main", "intro"],
+  "conventionalCommits.scopes": ["main", "reactivity", "signal"],
   "files.eol": "\n",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css, scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css, scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#09bde4",
     "activityBar.background": "#09bde4",
