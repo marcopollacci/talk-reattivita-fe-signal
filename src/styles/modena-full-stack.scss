@@ -47,3 +47,7 @@
     }
   }
 }
+
+.text-darker-gradient {
+  @include mixins.gradientText(#000000, #ff00d8);
+}
