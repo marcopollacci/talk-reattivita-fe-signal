@@ -7,8 +7,7 @@
     "build": "node build.js",
     "clean": "rimraf public",
     "start:modena-full-stack": "node serve.js modena-full-stack",
-    "prettier": "prettier --write \"src/**/*.{html,scss,js}\"",
-    "gh-pages": "gh-pages -d public"
+    "prettier": "prettier --write \"src/**/*.{html,scss,js}\""
   },
   "keywords": [
     "presentation",
@@ -26,7 +25,6 @@
   },
   "devDependencies": {
     "browser-sync": "^3.0.3",
-    "gh-pages": "^6.3.0",
     "glob": "^11.0.1",
     "prettier": "^3.5.0",
     "rimraf": "^6.0.1",
