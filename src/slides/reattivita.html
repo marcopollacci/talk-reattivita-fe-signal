@@ -123,3 +123,22 @@
     </ul>
   </p-notes>
 </p-slide>
+<p-slide class="center">
+  <h4 class="text-darker-gradient">Ciclo di rilevamento delle modifiche</h4>
+</p-slide>
+<p-slide>
+  <div class="hand-drawing small-text">
+    <span box>Async Event (setTimeout)</span>
+    <p-fragment><span arrow down></span> <span box>Zone.js intercetta evento</span></p-fragment>
+    <p-fragment><span arrow down></span> <span box>Check tutti componenti</span></p-fragment>
+    <p-fragment><span arrow down></span> <span box>Aggiornamento interfaccia</span></p-fragment>
+  </div>
+  <p-notes>
+    Strategie di Rilevamento delle Modifiche. Angular utilizza due strategie principali per il rilevamento delle modifiche: Default e OnPush.
+    <p>- Default: Angular controlla tutti i componenti in modo ricorsivo per vedere se ci sono cambiamenti. Questo è il comportamento predefinito.</p>
+    <p>
+      - OnPush: Angular controlla solo i componenti che hanno cambiamenti nei loro input o che hanno eventi interni che modificano lo stato. Questa strategia è più efficiente per
+      componenti che non cambiano frequentemente.
+    </p>
+  </p-notes>
+</p-slide>
