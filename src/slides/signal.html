@@ -76,3 +76,66 @@
     <p-fragment><li>📌 I consumer sono memoized by default.</li></p-fragment>
   </ul>
 </p-slide>
+<p-slide class="cover-subSection">
+  <h1>Observable vs Signal</h1>
+</p-slide>
+<p-slide>
+  <h5 class="text-cover center">Observable vs Signal</h5>
+  <div style="display: flex; align-items: center" class="two-columns">
+    <p-note>
+      <ul class="long-list">
+        <li>☝️Gli observable non sono obbligati ad emettere un valore alla creazione</li>
+        <li>☝️Gli observable possono emettere i valori in maniera sincrona ed asincrona</li>
+        <li>☝️Gli observable hanno il concetto di stato “complete”</li>
+      </ul>
+    </p-note>
+    <p-fragment
+      ><p-note>
+        <ul class="long-list">
+          <li>☝️Signal ha sempre almeno un valore dalla sua creazione</li>
+          <li>☝️Signal non emette nulla se non la notifica di un cambio di valore, che deve essere “pulled” dal consumer</li>
+          <li>☝️Signal non presenta il concetto di stato complete</li>
+        </ul>
+      </p-note></p-fragment
+    >
+  </div>
+</p-slide>
+<p-slide class="center">
+  <h5>🔄 <span class="text-sub-section">Observable --> Signal</span> 🔄</h5>
+</p-slide>
+<p-slide>
+  <h5>Angular mette a disposizione una funzione specifica per convertire gli Observale esistenti in Signal:</h5>
+  <h5 class="center" style="margin-top: 0"><code>toSignal()</code></h5>
+</p-slide>
+<p-slide>
+  <h4 style="margin-bottom: 0.5em" class="center">👨‍💻</h4>
+  <pre class="small-line" data-label-file="app.component.ts"><code class="language-javascript">
+    @Component({
+      standalone: true,
+      template:`{{ counter() }}`,
+    })
+    export class FooComponent { </code>
+      <p-fragment><code class="language-javascript">counter$ = interval(1000);</code></p-fragment>
+      <p-fragment><code class="language-javascript">counter  = toSignal(this.counter$);</code></p-fragment>
+   <code class="language-javascript">}
+  </code></pre>
+</p-slide>
+<p-slide class="cover">
+  <h1>In sinergia con gli Observable</h1>
+</p-slide>
+<p-slide>
+  <p-note style="font-size: 0.65em" class="mid-dimension center">⚙️ Signal ed Observable possono essere usati insieme in modo efficiente ⚙️</p-note>
+</p-slide>
+<p-slide>
+  <h4 style="margin-bottom: 0.5em" class="center"><span class="text-sub-section">Ogni tipo di operazione sincrona può essere effettuata con i signal</span> 📡</h4>
+</p-slide>
+<p-slide>
+  <h4 style="margin-bottom: 0.7em">🙌 Ad esempio 🙌</h4>
+  <ul class="long-list">
+    <p-fragment><li>📌 Aggiornamento Carrello e-Commerce</li></p-fragment>
+    <p-fragment><li>📌 Sistema di notifiche</li></p-fragment>
+    <p-fragment
+      ><li>📌 <i>"Sostituzione di NGRX per specifici use case con store piccoli e semplici"</i></li></p-fragment
+    >
+  </ul>
+</p-slide>
