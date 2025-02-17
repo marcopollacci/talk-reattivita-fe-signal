@@ -1,8 +1,8 @@
-# Reattività in Angular: perché Signal cambia le regole del gioco
+# Reattività sul frontend: Signal cambia le regole del gioco
 
-Slides for talk about Signal and Angular
+Slides for talk about Signal, Reactivity and Angular
 
-Originally conceived for [Modena Full Stack](https://www.meetup.com/it-IT/modena-full-stack).
+Originally conceived for [Modena Full Stack](https://www.meetup.com/modena-full-stack/events/306221315).
 
 Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
