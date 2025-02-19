@@ -57,7 +57,14 @@
     <p-fragment><li>📌 Al suo variare, chiunque lo utilizzi è in grado di accedere al nuovo valore</li></p-fragment>
     <p-fragment><li>📌 La reattività di signal è sincrona ed il suo valore viene propagato istantaneamente</li></p-fragment>
     <p-fragment><li>📌 Ogni singolo signal è chiamato “producer”</li></p-fragment>
+    <p-fragment><li>📌 La reattività è fine-grained</li></p-fragment>
   </ul>
+  <p-notes>
+    <p>
+      <b>"fine-grained":</b> i signals di Angular permettono di tracciare in modo automatico le dipendenze reattive. Quando il valore di un signal cambia, solo le parti del DOM o
+      della logica che dipendono da quel valore vengono aggiornate.
+    </p>
+  </p-notes>
 </p-slide>
 <p-slide>
   <pre class="language-javascript" data-label-file="app.component.ts"><code class="small-line">
