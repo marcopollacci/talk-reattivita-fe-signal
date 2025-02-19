@@ -1,5 +1,7 @@
 # Reattività sul frontend: Signal cambia le regole del gioco
 
+![wakatime](https://wakatime.com/badge/user/2729ac0c-0ebb-4599-b424-3a6648627bff/project/76db6240-5bdc-4138-9184-143e7705c6df.svg)
+
 Slides for talk about Signal, Reactivity and Angular
 
 Originally conceived for [Modena Full Stack](https://www.meetup.com/modena-full-stack/events/306221315).
