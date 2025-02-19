@@ -8,6 +8,8 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 # Url Slide
 
+- [26/02/2025 - Modena FullStack Slide](https://talk-reattivita-fe-signal.pages.dev/modena-full-stack)
+
 ## Building
 
 Node.js >= 10.x is required.
