@@ -12,6 +12,44 @@
   </p-note>
   <p-note style="font-size: 0.5em"> https://docs.solidjs.com/concepts/signals </p-note>
 </p-slide>
+<p-slide class="center cover-subSection-all">
+  <h2>Ma chi usa Signal?</h2>
+  <img src="img/meme_dilemma.png" alt="meme dilemma" class="alter-image-size" style="--image-start-size: 6em" />
+</p-slide>
+<p-slide>
+  <h3 style="margin-block-end: 0.9em">📡 <span class="cover-subSection-all">Signal</span></h3>
+  <div class="mid-dimension">
+    <p-fragment><p>✔ SolidJS</p></p-fragment>
+    <p-fragment><p>✔ Angular</p></p-fragment>
+    <p-fragment><p>✔ Preact Signals</p></p-fragment>
+    <p-fragment><p class="italic">≈ Vue3</p></p-fragment>
+    <p-fragment><p class="italic">≈ React</p></p-fragment>
+  </div>
+  <p-notes>
+    <ul>
+      <li>
+        Angular: A partire da Angular 16, il team ha introdotto i Signals come alternativa più performante e prevedibile rispetto a RxJS per la gestione dello stato reattivo e il
+        rilevamento delle modifiche. L'adozione è in crescita, con molti sviluppatori che stanno già migrando dai tradizionali BehaviorSubject o NgRx a un approccio a Signals.
+      </li>
+      <li>
+        SolidJS: Questo framework frontend ha i Signals come elemento fondamentale per la reattività, offrendo aggiornamenti super efficienti senza bisogno di diffing virtual DOM.
+        SolidJS ha ispirato molti altri ecosistemi a rivedere i propri pattern di reattività.
+      </li>
+      <li>
+        Preact Signals: La libreria Signals di Preact fornisce uno stato reattivo con un footprint molto ridotto, spesso usato anche in React per evitare il re-rendering non
+        necessario.
+      </li>
+      <li>
+        Vue 3 (Composition API): Anche se Vue non chiama esplicitamente "Signals", i suoi ref e reactive sono molto simili per concetto e funzionamento, offrendo aggiornamenti
+        granulari e reattività automatica.
+      </li>
+      <li>
+        React (parziale): La community React ha iniziato a esplorare pattern simili ai Signals con librerie come Jotai, Zustand o Valtio, che offrono stato atomico o reattivo,
+        senza i limiti dei tradizionali hooks.
+      </li>
+    </ul>
+  </p-notes>
+</p-slide>
 <p-slide>
   <h4 style="margin-block-end: 0.7em">🙌 Signal 🙌</h4>
   <ul class="long-list">
