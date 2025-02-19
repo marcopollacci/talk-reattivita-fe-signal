@@ -64,3 +64,15 @@
 .italic {
   font-style: italic;
 }
+
+p-slide {
+  &.strike-through {
+    &:has(p-fragment[strike][aria-hidden='false']) {
+      h3 {
+        span {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
