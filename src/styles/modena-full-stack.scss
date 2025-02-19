@@ -17,13 +17,6 @@
   --progress-color-two: #ff00f7;
 }
 
-.bottom-fist-page {
-  span:first-of-type {
-    @include mixins.gradientText(#252525, #484747);
-    font-family: 'Graphik Regular', sans-serif;
-  }
-}
-
 .text-sub-section {
   @include mixins.gradientText(#ff00d8, #ff542f);
 }
