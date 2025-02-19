@@ -94,7 +94,7 @@ p-fragment.landing {
 }
 
 .our-header {
-  border-inset-inline-start: var(--brand-color) solid 0.15em;
+  border-inline-start: var(--brand-color) solid 0.15em;
   padding: 0.5em;
   margin: 0 0 0.5em;
 }
@@ -478,7 +478,7 @@ a {
   }
 
   th {
-    border-inset-block-end: 0.1em solid;
+    border-block-end: 0.1em solid;
   }
 
   td,
@@ -552,7 +552,7 @@ pre[data-label-file]::before {
   content: attr(data-label-file);
   display: block;
   width: 100%;
-  border-inset-block-end: 1px solid #c7c6c6;
+  border-block-end: 1px solid #c7c6c6;
   padding: 0.5em 1em;
   text-align: center;
   color: #6f6d6d;
