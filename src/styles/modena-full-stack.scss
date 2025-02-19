@@ -56,6 +56,10 @@
   @include mixins.gradientText(#000000, #aca9a9);
 }
 
+.clean-gradient-color {
+  -webkit-text-fill-color: initial;
+}
+
 .react {
   font-family: 'Graphik Semibold', serif;
   color: #4c99b8;
