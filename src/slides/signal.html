@@ -147,23 +147,3 @@
     >
   </div>
 </p-slide>
-<p-slide class="center">
-  <h5>🔄 <span class="text-sub-section">Observable --> Signal</span> 🔄</h5>
-</p-slide>
-<p-slide>
-  <h5>Angular mette a disposizione una funzione specifica per convertire gli Observale esistenti in Signal:</h5>
-  <h5 class="center" style="margin-top: 0"><code>toSignal()</code></h5>
-</p-slide>
-<p-slide>
-  <h4 style="margin-bottom: 0.5em" class="center">👨‍💻</h4>
-  <pre class="small-line" data-label-file="app.component.ts"><code class="language-javascript">
-    @Component({
-      standalone: true,
-      template:`{{ counter() }}`,
-    })
-    export class FooComponent { </code>
-      <p-fragment><code class="language-javascript">counter$ = interval(1000);</code></p-fragment>
-      <p-fragment><code class="language-javascript">counter  = toSignal(this.counter$);</code></p-fragment>
-   <code class="language-javascript">}
-  </code></pre>
-</p-slide>

@@ -54,7 +54,7 @@
 </p-slide>
 <p-slide>
   <h4 style="margin-bottom: 0.5em" class="center">Some code 👨‍💻</h4>
-  <pre data-label-file="check.ts"><code class="language-javascript">
+  <pre data-label-file="with-deps.ts"><code class="language-javascript">
       //React
       useEffect(() => {
         console.log('Count changed:', count);
@@ -65,5 +65,22 @@
         console.log('Count changed:', this.count());
       });
     </code>
+  </p-fragment></pre>
+</p-slide>
+<p-slide style="position: relative">
+  <h4 style="margin-bottom: 0.5em" class="center">Some code 👨‍💻</h4>
+  <pre data-label-file="without-deps.ts"><code class="language-javascript">
+      //React
+      useEffect(() => {
+        console.log('Count changed:', count);
+      }, []);
+  </code><p-fragment><code class="language-javascript">
+      //Angular
+      untracked(() => {
+        console.log('Count changed:', this.count())
+      });
+    </code><span
+    style="--circle-sketch-height: 2.8em;position: absolute;inset-block-end: 8.6em;width: 10em;z-index: 1;inset-inline-start: 2em;"
+    class="circle-sketch-highlight"></span>
   </p-fragment></pre>
 </p-slide>
