@@ -3,8 +3,8 @@
   ᯓ🏃🏻‍♀️‍➡️
   <p-notes>
     <p>
-      La reattività è un paradigma di programmazione che si concentra sulla gestione dei flussi di dati e sulla propagazione dei cambiamenti di stato attraverso un'applicazione. In
-      un'applicazione web reattiva, quando un dato cambia, tutti i componenti che dipendono da quel dato vengono automaticamente aggiornati per riflettere il nuovo stato.
+      La reattività è un paradigma di programmazione che gestisce i flussi di dati e propaga automaticamente i cambiamenti di stato. In un'applicazione web reattiva, quando un dato
+      cambia, tutti i componenti che dipendono da esso si aggiornano automaticamente, mantenendo la vista sincronizzata con lo stato
     </p>
   </p-notes>
 </p-slide>
@@ -33,6 +33,24 @@
         Efficienza e Performance: La gestione reattiva dello stato permette di ottimizzare le performance dell'applicazione, riducendo il carico di lavoro e migliorando la velocità
         di risposta.
       </li>
+    </ul>
+  </p-notes>
+</p-slide>
+<p-slide class="center">
+  <h3 class="cover-all">Ma come funziona la reattività?</h3>
+</p-slide>
+<p-slide>
+  <h4 class="cover-all">Ciclo della reattività</h4>
+  <div class="hand-drawing-horizontal medium-text">
+    <span box>Modifica dello Stato</span>
+    <p-fragment><span arrow right></span> <span box>Rilevamento del Cambiamento</span></p-fragment>
+    <p-fragment><span arrow right></span> <span box>Aggiornamento del DOM</span></p-fragment>
+  </div>
+  <p-notes>
+    <ul>
+      <li>Modifica dello Stato: L'utente interagisce con l'applicazione (clic, input, eventi), chiamata HTTP.</li>
+      <li>Rilevamento del Cambiamento: il Framework rileva il cambiamento dello stato e notifica tutti i componenti che dipendono da esso.</li>
+      <li>Aggiornamento del DOM: dipende dal tipo di framework.</li>
     </ul>
   </p-notes>
 </p-slide>

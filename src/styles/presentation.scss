@@ -656,6 +656,19 @@ pre[data-label-file]::after {
   }
 }
 
+.property-hand-drawing-horizontal {
+  gap: 0.5em;
+  flex-direction: row;
+}
+
+.hand-drawing-horizontal {
+  @extend .hand-drawing;
+  @extend .property-hand-drawing-horizontal;
+  p-fragment {
+    @extend .property-hand-drawing-horizontal;
+  }
+}
+
 @keyframes box {
   0% {
     inset-inline-start: var(--rando0);
