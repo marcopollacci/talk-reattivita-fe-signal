@@ -659,6 +659,7 @@ pre[data-label-file]::after {
 .property-hand-drawing-horizontal {
   gap: 0.5em;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .hand-drawing-horizontal {
