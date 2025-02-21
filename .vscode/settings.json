@@ -11,7 +11,7 @@
   "git.smartCommitChanges": "tracked",
   "gitlens.views.remotes.branches.layout": "tree",
   "eslint.lintTask.enable": true,
-  "conventionalCommits.scopes": ["main", "reactivity", "signal", "project"],
+  "conventionalCommits.scopes": ["main", "reactivity", "signal", "project", "css-day-2025"],
   "files.eol": "\n",
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
