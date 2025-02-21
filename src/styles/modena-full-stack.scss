@@ -73,3 +73,13 @@ p-slide {
     }
   }
 }
+
+.css-slide {
+  img {
+    border-radius: 1em;
+    box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
+    &:hover {
+      box-shadow: 0em 0em 1em 0.3em rgba(46, 71, 214, 0.5);
+    }
+  }
+}
