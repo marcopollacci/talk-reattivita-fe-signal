@@ -670,6 +670,15 @@ pre[data-label-file]::after {
   }
 }
 
+p-slide {
+  p-fragment[none] {
+    visibility: hidden;
+    &[aria-hidden='false'] {
+      visibility: visible;
+    }
+  }
+}
+
 @keyframes box {
   0% {
     inset-inline-start: var(--rando0);
