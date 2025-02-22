@@ -206,6 +206,11 @@ p-deck:not([mode='speaker']) {
       animation: from-#{$dir} var(--fragment-duration, 300ms) $motion-entrance-timing-fn 1 forwards;
     }
   }
+  p-fragment[aria-hidden='true'] {
+    * {
+      opacity: 0;
+    }
+  }
 }
 
 .from-above,
