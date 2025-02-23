@@ -8,8 +8,14 @@ p-deck {
   &[mode='speaker'] {
     p-fragment {
       opacity: 0.5;
+      p {
+        opacity: 0.5;
+      }
       &[aria-hidden='false'] {
         opacity: 1;
+        p {
+          opacity: 1;
+        }
       }
     }
     p-slide[next] {
