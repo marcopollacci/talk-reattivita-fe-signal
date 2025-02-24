@@ -3,6 +3,21 @@
   <img src="img/qrcode-slide.png" alt="qrcode" class="alter-image-size" />
   <a href="https://talk-reattivita-fe-signal.pages.dev/modena-full-stack">https://talk-reattivita-fe-signal.pages.dev/modena-full-stack</a>
 </p-slide>
+<p-slide>
+  <pre data-label-file="questions.ts"><code class="language-javascript">
+    export class EndOfTalkComponent {
+      questions = input.required<string[]>();
+    
+      constructor() {
+        effect(() => {
+          this.questions().forEach(async (question) => {
+            console.log('The answer is: ', await this.answer(question))
+          })
+        })
+      }
+    }</code>
+  </pre>
+</p-slide>
 <p-slide blob-slide class="two-columns">
   <gfy-blob
     clearcoatroughness="0.4"
