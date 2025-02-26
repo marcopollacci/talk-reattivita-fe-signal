@@ -70,6 +70,16 @@
       }
     }</code></pre>
 </p-slide>
+<p-slide>
+  <h4 style="margin-bottom: 0.5em" class="center">Some code 👨‍💻</h4>
+  <pre class="language-html" data-label-file="app.component.html"><code class="small-line mid-dimension">
+    &lt;ul>
+      @for (user of users$ | async; track user) {
+        &lt;li>{{ user }}&lt;/li>
+      }
+    &lt;/ul>
+  </code></pre>
+</p-slide>
 <p-slide class="center">
   <h2 class="cover-subSection-all">Change Detection</h2>
   <p-fragment style="margin-inline-start: 6.5em"><h4 class="text-darker-gradient">...con Zone.js</h4></p-fragment>

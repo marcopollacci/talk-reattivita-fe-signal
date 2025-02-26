@@ -56,12 +56,12 @@
   <h4 style="margin-block-end: 0.7em">🙌 Signal 🙌</h4>
   <ul class="long-list">
     <p-fragment><li>📌 Un signal contiene sempre un valore</li></p-fragment>
-    <p-fragment><li>📌 Al suo variare, chiunque lo utilizzi è in grado di accedere al nuovo valore</li></p-fragment>
     <p-fragment><li>📌 La reattività di signal è sincrona ed il suo valore viene propagato istantaneamente</li></p-fragment>
     <p-fragment><li>📌 Ogni singolo signal è chiamato “producer”</li></p-fragment>
     <p-fragment><li>📌 La reattività è fine-grained</li></p-fragment>
   </ul>
   <p-notes>
+    <p><b>Un signal contiene sempre un valore:</b> Al suo variare, chiunque lo utilizzi è in grado di accedere al nuovo valore</p>
     <p>
       <b>"fine-grained":</b> i signals di Angular permettono di tracciare in modo automatico le dipendenze reattive. Quando il valore di un signal cambia, solo le parti del DOM o
       della logica che dipendono da quel valore vengono aggiornate.
@@ -112,15 +112,30 @@
   <h4 style="margin-block-end: 0.7em">🙌 Signal Consumer 🙌</h4>
   <ul class="long-list">
     <p-fragment
-      ><li>📌 Sia i template sia le funzioni che “leggono” i signal (es: <u>computed</u> ed <u>effect</u>) sono chiamati <b>“consumer”</b></li></p-fragment
+      ><li>
+        📌 <b class="cover-all">I template e le funzioni</b> che leggono i signal (es. <code>computed</code> ed <code>effect</code>) sono definiti
+        <b class="cover-all">consumer</b>.
+      </li></p-fragment
     >
     <p-fragment
-      ><li>📌 E' possibile “iscriversi” e reagire tramite i consumer, come ad esempio <b>effect</b></li></p-fragment
+      ><li>📌 I consumer <b class="cover-all">si registrano</b> ai signal e reagiscono ai loro cambiamenti.</li></p-fragment
     >
-    <p-fragment><li>📌 Quando questo accade, si crea una “connessione” tra producer <-> consumer simile alla subscription negli observable</li></p-fragment>
-    <p-fragment><li>📌 I producer inviano una notifica di aggiornamento e non direttamente il nuovo valore, che andrà così esplicitamente letto</li></p-fragment>
-    <p-fragment><li>📌 Il consumer potrà decidere di leggere il valore oppure non farlo mai.</li></p-fragment>
-    <p-fragment><li>📌 I consumer sono memoized by default.</li></p-fragment>
+    <p-fragment
+      ><li>
+        📌 Quando un consumer legge un signal, si crea una <span class="cover-all">dipendenza reattiva</span> tra producer e consumer, simile a una subscription negli Observable.
+      </li></p-fragment
+    >
+    <p-fragment>
+      <li>
+        📌 I producer <span class="cover-all">notificano un aggiornamento</span>, ma non inviano direttamente il nuovo valore, che deve essere esplicitamente letto.
+      </li></p-fragment
+    >
+    <p-fragment
+      ><li>📌 Il consumer può scegliere <span class="cover-all">se leggere</span> il valore.</li></p-fragment
+    >
+    <p-fragment
+      ><li>📌 I consumer sono <b class="cover-all">memoized</b> by default.</li></p-fragment
+    >
   </ul>
   <p-notes>
     <p>memoized: il valore è memorizzato e ricalcolato solo quando le sue dipendenze cambiano</p>
