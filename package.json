@@ -21,13 +21,13 @@
   "license": "MIT",
   "dependencies": {
     "p-slides": "^0.2.0",
-    "prismjs": "^1.29.0"
+    "prismjs": "^1.30.0"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.3",
+    "browser-sync": "^3.0.4",
     "glob": "^11.0.1",
-    "prettier": "^3.5.0",
+    "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "sass": "1.84"
+    "sass": "1.86"
   }
 }
